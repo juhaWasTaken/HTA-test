@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/a76dfe4e45.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.js"
-        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>HotForex</title>
 </head>
 
@@ -56,11 +55,212 @@
     </header>
 
     <main>
-        
+        <div class="registration-form">
+            <form class="form-container">
+                <div class="form-row">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                    <input type="email" placeholder="Email">
+                    <select id="country-select">
+                        <option selected disabled value="">Country of Residence</option>
+                        <option value="US" data-code="+1">United States</option>
+                        <option value="UK" data-code="+44">United Kingdom</option>
+                        <option value="ES" data-code="+34">Spain</option>
+                        <option value="MX" data-code="+52">Mexico</option>
+                    </select>
+                    <div class="phone-group">
+                        <input type="text" class="country-code" placeholder="+359" disabled>
+                        <input type="text" class="phone-number" placeholder="Phone Number">
+                    </div>
+                    <select>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                    </select>
+                </div>
+
+                <div class="form-footer">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="terms">
+                        <label for="terms">
+                            I have read and accepted the privacy policy
+                            Trading Forex & CFDs is risky
+                        </label>
+                    </div>
+                    <button type="submit" class="register-btn">Register now</button>
+                </div>
+            </form>
+        </div>
+
+        <section class="main-section">
+            <div class="mainBG"></div>
+
+            <h2 class="main-title">This is dummy text</h2>
+
+            <div class="main-content">
+                <!-- Left side -->
+                <div class="info-column">
+                    <div class="info-item">
+                        <i class="fa-solid fa-arrows-down-to-people" style="color:#c20000;"></i>
+                        <p>It is a long established<br>fact that a reader</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-money-bill-transfer" style="color:#c20000;"></i>
+                        <p>It is a long established<br>fact that a reader</p>
+                    </div>
+                </div>
+
+                <!-- Center image -->
+                <div class="image-column">
+                    <img src="assets/iphones.png" alt="Phone image" class="mainImage" />
+                </div>
+
+                <!-- Right side -->
+                <div class="info-column">
+                    <div class="info-item">
+                        <i class="fa-solid fa-hexagon-nodes" style="color:#c20000;"></i>
+                        <p>The standard chunk<br>of Lorem Ipsum</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-signal" style="color:#c20000;"></i>
+                        <p>The standard chunk<br>of Lorem Ipsum</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="whatIs-section">
+            <section class="whatIs-container">
+                <div class="whatIs-text">
+                    <h2>What is Lorem Ipsum?</h2>
+                    <h3>Lorem Ipsum is simply dummy</h3>
+
+                    <p class="whatIs-phrases">Lorem Ipsum passages</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s</p>
+
+                    <p class="whatIs-phrases">Lorem Ipsum passage</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s</p>
+
+                    <p class="whatIs-phrases">Lorem Ipsum passages</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s</p>
+                </div>
+
+                <img src="assets/iphones2.png" alt="Phone image" class="image-bottom" />
+            </section>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-container">
+                <p class="cta-text">
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. <br>It has roots in a piece of
+                    classical
+                    Latin literature from 45 BC, <br>
+                    making it over 2000 years old. <br>
+                    <span class="cta-text-phrase">Download it now!</span>
+                </p>
+                <div class="cta-buttons">
+                    <img src="assets/androidTag.png" alt="Android Tag" class="cta-tags">
+                    <img src="assets/appleTag.png" alt="Apple Tag" class="cta-tags">
+                </div>
+
+            </div>
+        </section>
     </main>
 
-    <script src="main.js"></script>
+    <footer>
+        <section class="footer-awards">
+            <div class="footer-awards-container">
+                <div class="footer-awards-text">
+                    <i class="fa-solid fa-trophy"></i>
+                    <p>Winner of 19 industry awards</p>
+                </div>
 
+                <div class="socialMedia">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-google-plus-g"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-solid fa-signal"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <section class="footer-container">
+                <div class="footer-section contact">
+                    <h4>CONTACT US</h4>
+                    <p><i class="fas fa-envelope"></i> support@hfeu.com</p>
+                    <p><i class="fas fa-phone"></i> +357-24-400165</p>
+                    <p><i class="fas fa-comment"></i> Live Chat</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>ABOUT</h4>
+                    <ul>
+                        <li>About HotForex</li>
+                        <li>Why HotForex</li>
+                        <li>Regulation and License</li>
+                        <li>Security of Funds</li>
+                        <li>Awards</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>PRODUCTS</h4>
+                    <ul>
+                        <li>Forex</li>
+                        <li>Metals and Oil</li>
+                        <li>Indices</li>
+                        <li>Shares</li>
+                        <li>Commodity CFDs</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>TRADING</h4>
+                    <ul>
+                        <li>Trading Tools</li>
+                        <li>Forex Education</li>
+                        <li>Platforms</li>
+                        <li>Account Types</li>
+                        <li>Exclusive Analysis</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>PROMOTIONS</h4>
+                    <ul>
+                        <li>Loyalty Program</li>
+                        <li>Bonus Offerings</li>
+                        <li>Contests & Rewards</li>
+                        <li>Free Funding</li>
+                        <li>Deposit</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>AFFILIATES</h4>
+                    <ul>
+                        <li>Affiliates</li>
+                        <li>About HF Affiliates</li>
+                        <li>Affiliate Types</li>
+                        <li>Marketing Tools</li>
+                        <li>Analytics</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+
+    </footer>
+
+
+    <script src="main.js"></script>
 </body>
 
 </html>

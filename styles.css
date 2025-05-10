@@ -7,6 +7,7 @@
 
 * {
     margin: 0;
+    /* overflow: hidden; */
 }
 
 img,
@@ -272,5 +273,499 @@ header {
         width: 120px;
         height: auto;
         flex-direction: column;
+    }
+}
+
+/* MAIN */
+.registration-form {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    gap: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.form-row input,
+.form-row select {
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.phone-group {
+    display: flex;
+    gap: 8px;
+}
+
+.phone-group .country-code {
+    width: 70px;
+}
+
+.phone-group .phone-number {
+    flex: 1;
+}
+
+.form-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 14px;
+    flex: 1;
+}
+
+.register-btn {
+    background-color: #d00000;
+    color: white;
+    padding: 14px 32px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+    height: fit-content;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.register-btn:hover {
+    background-color: #b00000;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .form-container {
+        flex-direction: column;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .form-footer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .register-btn {
+        width: 100%;
+        font-size: 18px;
+    }
+}
+
+/* MAIN SECTION */
+.main-section {
+    position: relative;
+
+    overflow: hidden;
+    text-align: center;
+    color: #000;
+}
+
+.mainBG {
+    background-image: url(assets/main-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.main-title {
+    margin-top: 60px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.info-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-end;
+    ;
+    font-size: 14px;
+    max-width: 180px;
+}
+
+.info-column:last-child {
+    align-items: flex-start;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+}
+
+.info-item i {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.image-column {
+    max-width: 300px;
+}
+
+.mainImage {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-column {
+        align-items: center;
+    }
+}
+
+/* WHAT IS SECTION */
+.whatIs-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    background-color: #222844;
+    position: relative;
+    overflow: hidden;
+}
+
+/* GRADIENT */
+.whatIs-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top center, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 60%);
+    pointer-events: none;
+}
+
+.whatIs-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+    padding: 0px 10px;
+}
+
+.whatIs-text {
+    max-width: 400px;
+    color: #fff;
+    padding-bottom: 40px;
+}
+
+.whatIs-text h2 {
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.whatIs-text h3 {
+    font-family: sans-serif;
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.whatIs-phrases {
+    color: #b00000;
+    font-weight: bold;
+    margin-top: 30px;
+    display: block;
+}
+
+.image-bottom {
+    max-width: 100%;
+    height: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .whatIs-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .whatIs-text h2 {
+        font-size: 22px;
+    }
+
+    .whatIs-text h3 {
+        font-size: 16px;
+    }
+}
+
+/* CTA SECTION */
+.cta-section {
+    margin: 60px auto;
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cta-container {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+}
+
+.cta-text {
+    color: #514d4e;
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.cta-text-phrase {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cta-tags {
+    height: 88px;
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .cta-text {
+        font-size: 18px;
+    }
+
+    .cta-tags {
+        height: 56px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-text {
+        font-size: 16px;
+    }
+
+    .cta-tags {
+        height: 58px;
+    }
+}
+
+/* FOOTER */
+.footer-awards {
+    background-color: #232223;
+    color: #a2a0a0;
+    padding: 15px 10px;
+}
+
+.footer-awards-container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+.footer-awards-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.socialMedia {
+    display: flex;
+    gap: 15px;
+    font-size: 24px;
+
+}
+
+@media (max-width: 480px) {
+    .footer-awards-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-awards-text p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 280px) {
+    .footer-awards-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .socialMedia {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.footer {
+    padding: 60px 40px;
+    background-color: #121212;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.footer-section {
+    flex: 1 1 160px;
+    min-width: 160px;
+    color: #a2a0a0;
+}
+
+.footer-section h4 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li,
+.footer-section p {
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    transition: all 0.2s ease;
+    cursor: pointer; /* Add pointer cursor to all items */
+}
+
+/* Hover effect for list items */
+.footer-section ul li:hover {
+    color: #d1d1d1; /* Lighter gray on hover */
+}
+
+/* Hover effect for contact info */
+.footer-section.contact p:hover {
+    color: #d1d1d1; /* Lighter gray on hover */
+}
+
+.footer-section i {
+    color: red;
+    margin-right: 10px;
+    width: 16px;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .footer-container {
+        gap: 30px;
+    }
+    
+    .footer-section {
+        flex: 1 1 140px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px 30px;
+    }
+    
+    .footer-container {
+        gap: 30px 20px;
+    }
+    
+    .footer-section {
+        flex: 1 1 calc(50% - 20px);
+        min-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 40px 20px;
+    }
+    
+    .footer-section {
+        flex: 1 1 100%;
+        min-width: 100%;
+    }
+    
+    .footer-section h4 {
+        margin-bottom: 15px;
+    }
+    
+    .footer-section ul li,
+    .footer-section p {
+        margin-bottom: 10px;
     }
 }
